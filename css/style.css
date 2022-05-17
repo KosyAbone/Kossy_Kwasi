@@ -7,36 +7,39 @@
 }
 body{
     background-color: #dad5d5;
+    position: relative;
 }
 #header{
+    background-color: red;
     height: 15vh;
     width: 100%;
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
 }
 #header-img{
-    margin-left: 2rem;
-    margin-right: auto;
+    margin-left: 1.5rem;
 }
 
 #header_title {
-    margin-right: 37rem;
-}
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+} 
 
 #nav-bar{
     background-color: #dad5d5;
-    height: 15vh;
-    position: fixed;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .nav-link{
-    padding: 1rem;
-    margin-left: 1.4rem;
+    padding: 0.6rem;
+    margin-left: 0.7rem;
     font-size: 1.2rem;
     text-decoration: none;
     color: black
@@ -44,26 +47,28 @@ body{
 #form-section{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 #form{
+    margin-top: 8rem;
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 #form > input{
     margin: 1.2rem 0;
-    padding: 1rem 2rem;
-    width: 30%;
+    padding: 0.8rem 2rem;
+    width: 80%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #submit{
-    width: 15% !important;
+    width: 50% !important;
     background-color: orange;
 }
 .section-img{
@@ -75,11 +80,14 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .feature-card{
-    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -87,7 +95,7 @@ body{
 }
 
 .feature-card > div{
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 #howWorks {
@@ -129,6 +137,12 @@ footer {
     padding: 2.5rem 0;
 }
 
+
+@media screen and (max-width: 375px){
+    #features{
+        background-color: pink;
+    }
+}
 
 @media screen and (max-width: 375px){
     #features{
